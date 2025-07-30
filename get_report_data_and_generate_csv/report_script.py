@@ -31,7 +31,7 @@ def convert_to_csv(report_data):
         csv_writer = csv.writer(csv_file)
         for row in report_data:
             for key in row.keys():
-                csv_writer.writerow([f"{row.get(key)}")
+                csv_writer.writerow([f"{row.get(key)}"])
 
 
 # Request to reports route
